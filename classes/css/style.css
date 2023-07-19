@@ -1,0 +1,41 @@
+.content-div{
+    background: white;
+    margin: auto;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.c-title{
+    text-align:center;
+    color: white;
+    background-color: #95287A;
+    padding: .25rem;
+}
+.section-title{
+    padding-top: 1rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    cursor: pointer;
+}
+.section-titlesub{
+    padding: .25rem;
+    cursor: pointer;
+}
+.h4-sub{
+    padding-top: .25rem;
+}
+.section-text{
+    padding-left: 1rem;
+    padding-right: .25rem;
+}
+.click{
+    cursor: pointer;
+}
+.c-icon{
+    width: 45px;
+}
+.content-img{
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
