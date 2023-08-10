@@ -9,5 +9,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_manuals';
-$plugin->version = 50;
+$plugin->version = 51;
 $plugin->requires = 2016052314; // Moodle version

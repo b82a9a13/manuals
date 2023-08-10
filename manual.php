@@ -5,13 +5,13 @@
  */
 
 require_once(__DIR__.'/../../config.php');
-
 use local_manuals\lib;
-
 require_login();
 $lib = new lib();
 
 //Get their highest level capability and the file to include
+$title = '';
+$include = '';
 $role = $lib->role();
 $context = context_system::instance();
 if($role === 'admin' || has_capability('local/manuals:admin', $context)){
@@ -47,4 +47,4 @@ include_once($include);
 echo $OUTPUT->footer();
 
 //Used to add a log by triggering the view_manual event
-\local_manuals\event\viewed_manual::create(array('contextid' => 1, 'contextlevel' => 10))->trigger();
+\local_manuals\event\viewed_manual::create(array('contextid' => 1))->trigger();
