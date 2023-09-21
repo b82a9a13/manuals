@@ -1,4 +1,10 @@
-<?php //CSS for the page?>
+<?php
+if(!isset($_SESSION['manuals_admin'])){
+    exit();
+} else if($_SESSION['manuals_admin'] != true){
+    exit();
+}
+//CSS for the page?>
 <link rel="stylesheet" href="./classes/css/style.css">
 <?php //Content for the page?>
 <div class="content-div">
